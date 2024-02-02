@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body{
+    background-color: #452727;
+    color: #b08c8c;
+
+    
+}
+header{
+    font-size: 26px;
+    text-align: center;
+}
+
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    color: #452727;
+    margin: 8px;
+    font-family: "Crimson Text", serif;
+    
+    background-color: #b08c8c;
+   }
+   
+   .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .btn::after {
+    background-color: #b08c8c;
+   }
+   
+   .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+  
+ 
+    
+   
+
+ 
+  
+ h2{
+ 
+ width: 40%;
+ }
+ 
+   
+ main{
+    font-size: 25px;
+    width: 40%;
+    text-align: center;
+ margin-top: 200px;
+   margin: 7% auto;
+   float: left;
+   margin-left:  40px;
+   font-family: "Crimson Text", serif;
+   box-shadow: #997474 0px 0px 18px ;
+   border-radius: 2em;
+   
+ }
+ 
+
+    
+    img{
+      width: 360px;
+      height: 500px;
+      margin-left: 400px;
+      box-shadow: #997474 0px 0px 18px ;
+      border-radius: 3em;
+    }
+
+    footer{
+      margin: 50px;
+      text-align: center;
+      font-family: "Crimson Text", serif;
+    }
+    h2{
+      text-align: center;
+      margin: 6px auto;
+      
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 25px;
+      box-shadow: 0px 0px 9px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-instagram {
+      background-color: #452727;
+      color: rgb(199, 165, 165);
+    }
+    
+    @media only screen and (max-width:800px){
+      main, nav, aside, section{
+        width: 100%;
+      }
+    }
+ aside{
+ text-align: center;
+ font-size: 25px;
+ }
+  .y2k{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Crimson Text", serif;
+  }
+  
+ 

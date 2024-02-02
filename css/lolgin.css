@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+   
+
+body{
+  background-color: #452727;
+   text-align: center;
+}
+div{
+    
+    width: 300px;
+    font-size: 30px;
+    font-family: 'Ruslan Display', sans-serif;
+      color:  #452727;
+      border-radius: 20px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 10px auto;
+      margin-top: 15%;
+      background-color:  #b08c8c;
+      font-family: "Crimson Text", serif;
+  }
