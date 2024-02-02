@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap');
+        body{
+            background-color: rgb(62, 36, 36);
+            font-size: 50px;
+            color: rgb(183, 151, 151);
+            text-align: center;
+             font-family: "Crimson Text", serif;
+        }
+     </style>
+        
+     
+
+
+    <script>
+        
+     function calculatePower(x, n) {
+    let result = 1;
+
+    for (let i = 0; i < n; i++) {
+        result *= x;
+    }
+
+    return result;
+}
+
+let x = parseFloat(prompt("Введіть значення x:"));
+let n = parseInt(prompt("Введіть ступінь n:"));
+
+let result = calculatePower(x, n);
+document.write(` ${x} в ступені ${n} дорівнює: ${result}`);
+    </script>
+</body>
+</html>

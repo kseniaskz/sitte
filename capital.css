@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body{
+  background-color: #452727;
+}
+
+table{
+    size: 50px;
+    color:#b59f9f;
+    margin-left: 43%;
+    margin-top: 40px;
+    font-family: "Crimson Text", serif;
+  font-size: 29px;
+  background-color: #241515;
+  width: 500px;
+  height: 600px;
+  float: left;
+  margin: 40px;
+  text-align: center;
+}
+    

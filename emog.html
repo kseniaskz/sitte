@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #452727;
+            text-align: center;
+            font-size: 35px;
+        }
+    </style>
+    <script>
+        let min = +prompt("Початок смайлів", "128000")
+let max = +prompt("Останій смайл", "128555")
+for (let i = min; i <= max; i++){
+document.writeln ("<div>&#"+i+";"+`&#`+i+"<div>")
+}
+    </script>
+</body>
+</html>

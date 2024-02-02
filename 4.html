@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       
+        html {
+    height: 100%;
+  }@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+        body{
+            background:#452727;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: "Crimson Text", serif;
+        }
+        div{
+            
+    margin: 360px;
+    
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    height: 500px;
+    
+    
+        }@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+        p{
+    margin: 10px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-family: "Crimson Text", serif;
+
+  }
+  .side{
+    color: #fff;
+   
+  }
+  span{
+    color: white;
+  }
+  
+.btn {
+  align-items: center;
+  background-image: linear-gradient(144deg,#936b6b, #311919 50%,#936b6b);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(48, 14, 14, 0.2)0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 20%;
+}
+
+.btn:active,
+.btn:hover {
+  outline: 0;
+}
+
+.btn span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.btn:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 16px;
+    min-width: 196px;
+  }
+}
+input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;}
+
+    .factorial{
+        left: 70%;
+    }
+    </style>
+</head>
+<body>
+    
+    <script>
+        alert('Давайте обчислим факторіал числа ' )
+  
+
+ function factorial(){
+let n=+document.factorial.n.value;
+let answer=document.getElementById("answer2");
+      let result=1;
+      for(let i =1; i<=n; i++){
+      result=i*result
+      }
+      string=`Факторіал числа ${n} дорівнює ${result}`
+      
+answer.innerHTML = string;
+    }
+    </script>
+ 
+ 
+   
+   <div class="factorial">
+    <p style="font-weight: 1000px; ; font-size: 20px; margin-bottom: 15px;">Факторіал числа n</p>
+        <form name="factorial" action="javascript:factorial()">
+           Число n дорівнює<input class="side" name="n" type="text" value="" size="4">
+            <input class="btn" type="submit" value="Розрахувати">
+            <input class="btn" type="reset" name="reset" value="Скинути">
+        </form>
+         Відповідь: <span id="answer2"></span><br/>
+        </div>
+      
+</body>
+</html>

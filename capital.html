@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/capital.css">
+</head>
+<body>
+    
+    <script>
+        let capitals = {
+         "Сеул": 9776000,
+         "Варшава": 1765000,
+         "Пекін":22000000,
+         "Джакарта": 2160000,
+         "Київ": 2884000,
+         "Мадрид": 3223000,
+        "Бангкок":10500000,
+         "Рим":2873000,
+         
+         };
+       
+         let capitalEntries = Object.entries(capitals);
+       
+         capitalEntries.sort((a, b) => a[0].localeCompare(b[0]));
+       
+         let htmlStringTable1 = "<table><tr><th>Назва</th><th>Населення</th></tr>";
+       
+         for (let entry of capitalEntries) {
+           htmlStringTable1 += `<tr><td>${entry[0]}</td><td>${entry[1]}</td></tr>`;
+         }
+       
+         htmlStringTable1 += "</table>";
+       
+         capitalEntries.sort((a, b) => b[1] - a[1]);
+       
+         let htmlStringTable2 = "<table><tr><th>Назва</th><th>Населення за кількостю</th></tr>";
+       
+         for (let entry of capitalEntries) {
+           htmlStringTable2 += `<tr><td>${entry[0]}</td><td>${entry[1]}</td></tr>`;
+         }
+       
+         htmlStringTable2 += "</table>";
+       
+         document.body.innerHTML = htmlStringTable1 + htmlStringTable2;
+             </script>   
+</body>
+</html>

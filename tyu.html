@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+  body{
+    background-color: #452727;
+   text-align: center;
+}
+div{
+   
+    width: 300px;
+    font-size: 25px;
+    font-family: "Crimson Text", serif;
+      color: #c1a1a1;
+      border-radius: 15px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 2px auto;
+      margin-top: 80px;
+      background-color: #2c1515;
+  }
+    </style>
+    <script>
+        let a=+prompt("Сторона а",3) ;
+        let b=+prompt("Сторона b ",4);
+        let c=+prompt("Сторона c",5);
+      let P=(a+b+c);
+        let p=(a+b+c)/2;
+        let S= Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        document.write(`<div><p>площа трикутника зі сторонами ${a}, ${b}, ${c} дорівнює ${S}<br></div></p>`);
+        document.write(`<div><p>периметр трикутника зі сторонами ${a}, ${b}, ${c} дорівнює ${P}</div></p>`);
+</script>
+
+</body>
+</html>

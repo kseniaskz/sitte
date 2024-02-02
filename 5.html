@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+        h1{
+            font-size: 35px;
+           
+            font-family: "Crimson Text", serif;
+        
+        }
+        div{
+                font-size: 35px; 
+                color:#e6dbdb ;
+                text-align: center;
+              margin: 30px;
+               margin:auto;
+               font-family: "Crimson Text", serif;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+        background-color: #381d1d;
+        height: 399px;
+        width: 700px;
+        
+
+      
+            }
+            .side{
+                width: 50px;
+                height: 35px;
+                font-size: 25px;
+                text-align: center;
+                margin-top: 10px;
+                font-family: "Crimson Text", serif;
+        
+    
+            }
+    
+        
+    
+    .btn {
+      background-color: #cbb4b4;
+      border: 2px solid #422800;
+     width: 100px;
+      color: #422800;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 18px;
+      margin: 5px;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin-top: 10px;
+      font-family: "Crimson Text", serif;
+        
+    }
+    
+    .btn:hover {
+      background-color: #835a5a;
+    }
+    
+    .btn:active {
+      box-shadow: #422800 2px 2px 0 0;
+      transform: translate(2px, 2px);
+    }
+    
+    @media (min-width: 768px) {
+      .btn {
+        min-width: 120px;
+        
+      }
+    }
+    body{
+       background-color: #452727;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    
+    </style>
+    <body>
+        <script>
+            function rectangle(){
+                let a=+document.rectangle.a.value;
+                let b=+document.rectangle.b.value
+                let S=a*b
+                let area=document.getElementById("area");
+                let perimeter=document.getElementById("perimeter");
+                let P=(a+b)*2
+                    string=S;
+                    string1=P;
+            area.innerHTML = string;
+            perimeter.innerHTML = string1;
+    }
+        </script>
+        <div >
+        <h1>Розрахунок площі та периметра прямокутника</h1> 
+           <form name="rectangle" action="javascript:rectangle()">
+         Довжина прямокутника:<input class="side" name="a" type="text" value="" size="4"><br>
+            Ширина прямокутника:<input class="side" name="b" type="text" value="" size="4"><br>          
+            <input class="btn" type="submit" value="ОК">
+            <input class="btn" type="reset" name="reset" value="Бувай">
+           </form>
+           Площа прямокутника дорівнює: <span id="area"></span><br/>
+            Периметр прямокутника дорівнює: <span id="perimeter"></span>
+            </div>
+</body>
+</html>

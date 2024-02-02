@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+      html{
+          height: 100%;
+      }
+      div{
+          width: 40%;
+       box-shadow: rgb(29, 14, 14) 0px 6px 12px -2px, rgb(49, 23, 23) 0px 3px 7px -3px;
+      margin-top: 100px;
+      font-size: 25px;
+      background-color: #2c1919;
+      padding: 30px 60px;
+      color: #FFFFFF;
+      font-family: "Crimson Text", serif;
+      justify-content: center;
+      margin: 210px;
+      
+      
+      }
+      input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background: transparent;}
+   body{
+      background:#452727;
+background: #452727;
+   }
+  
+
+
+
+  
+
+
+.button-69 {
+  background-color: initial;
+  background-image: linear-gradient(#452727 0, #452727 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgb(68, 45, 45) 0 1px 1px inset;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -4px;
+  outline: 0;
+  text-align: center;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 190px;
+  margin: 5px;
+}
+
+.button-69:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-69 {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 150px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <script>
+      function number() {
+          let num = +document.number.a.value;
+          let answer1 = document.getElementById("answer1");
+          let answer2 = document.getElementById("answer2");
+          let string1 = "", string2 = "";
+          let numStr = num.toString();
+          if (isNaN(num)) {
+              string1 = string2 = "Ви ввели не число";
+          } else {
+              for (let i = 0; i < numStr.length; i++) {
+                  if (numStr.length % 10 === 1 && numStr.length !== 11) {
+                      string1 = "У числі " + num + "-" + numStr.length + " цифра" + "<br>";
+                  } else if (numStr.length % 10 >= 2 && numStr.length % 10 <= 4 && (numStr.length < 10 || numStr.length >= 20)) {
+                      string1 = "У числі " + num + "-" + numStr.length + " цифри" + "<br>";
+                  } else {
+                      string1 = "У числі " + num + "-" + numStr.length + " цифр" + "<br>";
+                  }
+      
+                  switch (numStr[i]) {
+                      case '1':
+                          string2 += 'Один ';
+                          break;
+                      case '2':
+                          string2 += 'Два ';
+                          break;
+                      case '3':
+                          string2 += 'Три ';
+                          break;
+                      case '4':
+                          string2 += 'Чотири ';
+                          break;
+                      case '5':
+                          string2 += "П'ять ";
+                          break;
+                      case '6':
+                          string2 += 'Шість ';
+                          break;
+                      case '7':
+                          string2 += 'Сім ';
+                          break;
+                      case '8':
+                          string2 += 'Вісім ';
+                          break;
+                      case '9':
+                          string2 += "Дев'ять ";
+                          break;
+                      case '0':
+                          string2 += 'Нуль ';
+                          break;
+                  }
+              }
+          }
+          answer1.innerHTML = string1;
+          answer2.innerHTML = string2;
+      }
+      </script>
+<center><div>
+  <center><p><b>Давай порахуємо цифри в числі!!</b></p></center>
+  <form name="number" action="javascript:number()">
+      Запропонуйте число:<input class="side" name="a" type="text" value="" size="4">
+      
+
+      <input class="button-69" type="submit" value="OK"  > 
+      <input class="button-69" type="reset" name="reset" value="Скинути">
+  </form>
+      <span id="answer1"></span><br>
+    Присутні такі цифри як: <span id="answer2"></span>
+     
+</div></center>
+
+    
+</body>
+</html>

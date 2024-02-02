@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+ 
+        body{
+  background-color:#452727 ;
+}
+div{
+   
+    width: 300px;
+    font-size: 25px;
+    font-family: "Crimson Text", serif;
+      color:#b69d9d;
+      border-radius: 15px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 20px auto;
+      margin-top: 250px;
+      background-color:#201212c0;
+  }
+    </style>
+    <script>
+        let firstValue = parseFloat(prompt("Введіть перше число (від 0 до 1):","0.7"));
+let secondValue = parseFloat(prompt("Введіть друге число (від 0 до 1):","0.7"));
+
+
+if (!isNaN(firstValue) && !isNaN(secondValue) && firstValue >= 0 && firstValue <= 1 && secondValue >= 0 && secondValue <= 1) {
+    
+    let sum = firstValue + secondValue;
+    document.write("<div>Буде: " + sum.toFixed(2)); 
+} else {
+    document.write("<div>Введіть число в межах від 0 до 1</div>");
+}
+
+    </script>
+</body>
+</html>

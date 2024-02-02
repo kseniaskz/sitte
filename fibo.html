@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+ 
+        body{
+  background-color: #352020;
+}
+div{
+    font-family: "Crimson Text", serif;
+    width: 300px;
+    font-size: 25px;
+    
+      color: #b69d9d;
+      border-radius: 15px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 20px auto;
+      margin-top: 200px;
+      background-color: #201212c0;
+  }
+    </style>
+    <script>
+        function fibonacciSequence(n) {
+            let fibSequence = [0, 1];
+        
+            for (let i = 2; i < n; i++) {
+                fibSequence.push(fibSequence[i - 1] + fibSequence[i - 2]);
+            }
+        
+            return fibSequence;
+        }
+        
+        let n = parseInt(prompt("Введіть довжину послідовності Фібоначчі:","3"));
+        let result = fibonacciSequence(n);
+        
+        document.write(`<div><p>Послідовність Фібоначчі до ${n}: ${result.join(', ')}</div></p>`);
+        
+            </script>
+</body>
+</html>
